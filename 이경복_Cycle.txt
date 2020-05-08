@@ -1,0 +1,15 @@
+def solution(A,K) :
+  temp=[] 
+  
+  for i in range(0,len(A)) :
+    temp.append(0)
+
+  for i in range(0,len(A)) :
+    
+    value1 = (i+K) % len(A)   
+    temp[value1] = A[i] 
+
+  return temp
+
+in_array=[1,2,3,4,5,6]
+print("Result : ", solution(in_array,4))
