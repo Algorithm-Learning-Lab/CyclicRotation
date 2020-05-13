@@ -1,0 +1,5 @@
+def CyclicRotation(A, K):
+  for i in range (0, K):
+    A.insert(0,A[len(A)-1])
+    del A[len(A)-1]
+  return A
